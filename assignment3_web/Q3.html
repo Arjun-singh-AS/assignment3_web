@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Q3.Show an example of a descendant selector case. Create an ordered list within the article tag and use the child selector to change the background color of the list elements.</h1><br><br>
+        
+    <article class="container" id="art">
+        <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+            <li>Element 4</li>
+            <li>Element 5</li>
+            <li>Element 6</li>
+        </ol>
+    </article>
+    <style>
+        body{
+            background-color: coral;
+        }
+        h1{
+            width: 60%;
+            margin: auto;
+        }
+        article{
+            width: 60%;
+            margin: auto;
+        }
+        #art{
+            background-color: darkolivegreen;
+        }
+        .container{
+           background-color: yellow;
+           padding: 50px;
+        }
+        article >ol{
+            
+            background-color: aqua;
+            padding: 40px;
+        }
+        article >ol>li{
+           background-color: white;
+        }
+    </style>
+</body>
+</html>
